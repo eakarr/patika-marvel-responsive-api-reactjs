@@ -1,0 +1,176 @@
+/* //////////////////// General Specs Start //////////////////// */
+
+body {
+  margin: 0;
+  border-radius: 0px;
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+}
+
+/* //////////////////// General Specs End //////////////////// */
+
+/* //////////////////// Container Start //////////////////// */
+
+.container {
+  display: block;
+  justify-content: center;
+}
+
+.upper-side-container {
+  position: relative;
+  margin-bottom: 273px;
+  margin-top: -85px;
+}
+
+/* //////////////////// Upper Side Container Start //////////////////// */
+
+.super-heroes-img {
+  width: 100%;
+}
+
+.marvel-logo-img {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* //////////////////// Upper Side Container End //////////////////// */
+
+/* //////////////////// Down Side Start //////////////////// */
+
+.down-side-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 1360px;
+}
+
+.down-side-container > div {
+  display: flex;
+  justify-content: center;
+  min-width: 254px;
+}
+
+.hero-cards {
+  max-width: 276px;
+  box-sizing: border-box;
+  border: 1px solid #ffffff;
+  margin: 52px 32px;
+  padding: 18px;
+}
+
+.hero-cards > img {
+  width: 100%;
+  margin-top: -42px;
+  padding-top: 10px;
+  border-top: 1px solid #fff;
+}
+
+.hero-cards > p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  line-height: 100%;
+  text-align: center;
+  vertical-align: top;
+  color: #ffffff;
+}
+
+.hero-cards:hover {
+  cursor: pointer;
+  filter: brightness(120%);
+}
+
+/* //////////////////// Down Side End //////////////////// */
+
+/* //////////////////// Pagination Start //////////////////// */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 72px;
+}
+
+.pagination ul {
+  display: flex;
+  text-align: center;
+}
+
+.pagination ul > li {
+  width: 72px;
+  height: 48px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  list-style-type: none;
+  line-height: 23px;
+  line-height: 100%;
+  color: #7e7e7e;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.15px;
+  cursor: pointer;
+}
+
+.pagination ul > li:hover,
+.pagination ul > li.current-page {
+  background: #7e7e7e;
+  border-radius: 30px;
+  color: black;
+  height: 48px;
+}
+
+.pagination .previous,
+.pagination .next {
+  font-size: 50px;
+}
+/* //////////////////// Pagination End //////////////////// */
+
+/* //////////////////// Container End //////////////////// */
+
+/* //////////////////// iPads / Tablets Start //////////////////// */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .down-side-container > div {
+    width: 33%;
+  }
+  .upper-side-container {
+    margin-bottom: 273px;
+  }
+  .super-heroes-img {
+    height: 100%;
+  }
+}
+/* //////////////////// iPads / Tablets End //////////////////// */
+
+/* //////////////////// Mobile Start //////////////////// */
+
+@media screen and (max-width: 481px) {
+  .down-side-container > div {
+    width: 100%;
+  }
+}
+
+/* //////////////////// Mobile End //////////////////// */
+
+@media screen and (max-width: 1070px) {
+  .down-side-container > div {
+    width: 100%;
+  }
+  .marvel-logo-img {
+    max-width: 300px;
+    max-height: 150px;
+  }
+
+  .super-heroes-img {
+    height: 100%;
+  }
+} /* Number of cards drops from 3 to 1. You may think like "Actually mobile starts after 975px", in a way that is true but there is no way doing it without knowing the mobile and tablet versions of the marvel poster itself. */
