@@ -1,4 +1,4 @@
-# Week-3 Marvel Assignment
+# Marvel API
 
 **Project's Target** : To show and paginate certain data by sending a request to the API within a React.JS project. The data has been fetched from https://developer.marvel.com/ api by using Axios. Also, this project has a responsive structure. The fetched data will be stored in local storage to prevent an excessive amount of data fetching and sending requests while changing the pages.
 
