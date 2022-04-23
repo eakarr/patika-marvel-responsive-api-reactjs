@@ -1,5 +1,5 @@
 /* //////////////////// General Specs Start //////////////////// */
-
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Oxygen:wght@300&family=Roboto&display=swap");
 body {
   margin: 0;
   border-radius: 0px;
@@ -134,6 +134,172 @@ body {
   font-size: 50px;
 }
 /* //////////////////// Pagination End //////////////////// */
+
+/* //////////////////// SearchBarAndLang Start //////////////////// */
+
+.searchBarContainerMainDiv {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.searchBarLabel {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 23px;
+}
+.searchBarAndLanguageDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchBar > input {
+  height: 63px;
+  width: 609px;
+  border-radius: 0px;
+  border: #f4f4f4 solid 1px;
+  background-color: #222222;
+  padding-left: 26px;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.searchBar > input::placeholder {
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff solid;
+  opacity: 0.6;
+}
+
+.searchBarSpanDiv {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: absolute;
+  width: 639px;
+  border-radius: 0px;
+  background-color: #434343;
+  border-radius: 2px;
+}
+
+.searchBarSpan {
+  border: #ffffff solid 1px;
+  padding-left: 26px;
+  border-radius: 2px;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.searchBarSpan:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+
+.languages {
+  height: 63px;
+}
+
+.languagesButtons {
+  margin: 0 7px;
+  height: 100%;
+  width: 63px;
+  background-color: #434343;
+}
+
+.languagesButtons:hover {
+  background-color: #ffffff;
+}
+
+.languagesButtons:active {
+  background-color: #ffffff;
+}
+
+/* //////////////////// SearchBarAndLang End //////////////////// */
+
+/* //////////////////// Detail Page Start //////////////////// */
+
+.backToHomePageButton {
+  background-color: #434343;
+  border: #f4f4f4 1px solid;
+  color: #fff;
+  margin: 20px 20px 0 20px;
+}
+.backToHomePageButton:hover {
+  background-color: gray;
+}
+
+.superHeroDetailParentDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.superHeroDetailNameAndImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.superHeroDetailName {
+  color: gainsboro;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.superHeroDetailParagraph {
+  color: gainsboro;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 21px;
+  margin: 10px 10px;
+}
+
+.superHeroDetailComics {
+  color: gainsboro;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 21px;
+  margin: 10px 10px;
+}
+
+.superHeroDetailComics > span {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 5px;
+  align-items: center;
+}
+
+.superHeroDetailComics > h2 {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-bottom: #f4f4f4 1px solid;
+  padding-bottom: 10px;
+}
+/* //////////////////// Detail Page End //////////////////// */
 
 /* //////////////////// Container End //////////////////// */
 
